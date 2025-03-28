@@ -15,6 +15,7 @@ export class UsersService {
         return this.userRepo.find();
     }
 
+      // Create user by ID
     async createUser(user: UserEntity) {
         return this.userRepo.save(user);
     }
